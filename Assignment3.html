@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Online Videos</title>
+        <style>
+            img {
+            border: 2px solid darkorange;
+            border-radius: 50%;
+            }
+            p
+            {
+                color: blue;
+                font-size: larger;
+            }
+        </style>
+        <script> 
+            var myVideo = document.getElementById("video1"); 
+            
+            function vPlayed() 
+            { 
+                myVideo.play(); 
+            } 
+            function vPaused() 
+            {   
+                myVideo.pause(); 
+            } 
+        </script> 
+    </head>
+    <body>
+        <div>
+        <p><img  src="v2.png" alt="Online Videos" style="width:40px;height:40px;">    <b>AWESOME ONLINE VIDEOS</b></p>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <video id="video1" width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.ogg" type="video/ogg">
+              </video>
+        </div>
+        <div style="text-align:center">
+            <br><br>
+            <button onclick="vPlayed()">Play</button>
+            <button onclick="vPaused()">Pause</button> 
+        </div> 
+          
+    </body>
+</html>
